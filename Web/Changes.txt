@@ -1,0 +1,6 @@
+Changes
+1. Number 
+2. Picture
+3. Biography
+4. Link sa Github sa Projects
+5. MUST *YUNG SA ICON NG PROGRAMMING LANGUAGE*
