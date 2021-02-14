@@ -32,6 +32,7 @@
       transform: rotate(-45deg) translate(7px, -6px); 
     color:#00848d;
     }
+    
 
 .menu {
   position: fixed;
@@ -72,6 +73,7 @@
       width: 250px;
       height: 250px;
       background: url(../Pictures/me1.jpg);
+      /* background-size: 98.5%; */
       background-size: 105%;
       border-radius: 50%;
       border: solid 3px #00848d; 
@@ -107,6 +109,9 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+.nav-item:nth-child(5) {
+    transition-delay: 0.5s; }
 
 * {
   box-sizing: border-box; }
@@ -170,6 +175,19 @@ body {
       height: 117%;
       z-index: -1;
       background: rgba(41, 40, 38, 0.9); }
+    body#bg4 {
+        background: url(../Pictures/bg4.jpg);
+        background-attachment: fixed;
+        background-size: cover; }
+        body#bg4:after {
+         content: '';
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 117%;
+          z-index: -1;
+          background: rgba(41, 40, 38, 0.9); }
 
 h1, h2, h3 {
   margin: 0;
@@ -215,7 +233,7 @@ main {
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio'
  'job1 job2 job3';
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(3, 2fr); }
   .tng-info .profpicbio {
     grid-area: bioimage;
     margin: auto;
@@ -296,11 +314,11 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projs {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(5, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projs {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
